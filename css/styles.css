@@ -1,0 +1,72 @@
+body {
+	background-image: url("../assets/original.gif");
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+/* Removes the dots — https://i.imgur.com/xLbk0cH.png */
+a {
+	text-decoration: none;
+}
+
+
+img {
+	transition-duration: 0.2s;
+}
+
+img:hover {
+	transform: translateY(-5px);
+}
+
+#heading {
+	font-family: "dosis";
+	font-size: 50px;
+	color: white;
+	margin: 0%;
+}
+
+#right {
+  text-align: right;
+}
+
+#center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+#msg {
+	font-family: "dosis";
+	margin: 5px;
+	color: white;
+}
+
+@font-face {
+	font-family: "dosis";
+	src: url("../fonts/ValorantFont.otf");
+}
+@-webkit-keyframes rainbow {
+  0% {color: #9dbcff;}
+  50% {color: #b000b6;}
+  100% {color: #9dbcff;}
+}
+
+@-ms-keyframes rainbow {
+  0% {color: #9dbcff;}
+  50% {color: #b000b6;}
+  100% {color: #9dbcff;}
+}
+
+@-o-keyframes rainbow {
+  0% {color: #9dbcff;}
+  50% {color: #b000b6;}
+  100% {color: #9dbcff;}
+}
+
+@keyframes rainbow {
+  0% {color: #9dbcff;}
+  50% {color: #b000b6;}
+  100% {color: #9dbcff;}
+}
