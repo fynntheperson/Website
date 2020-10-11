@@ -37,36 +37,8 @@ img:hover {
 	text-align: center;
 }
 
-#msg {
-	font-family: "dosis";
-	margin: 5px;
-	color: white;
-}
+.rainbow-text {
+	background-image: linear-gradient(to left, violet, blue);   -webkit-background-clip: text;
+	color: transparent;
+  }
 
-@font-face {
-	font-family: "dosis";
-	src: url("../fonts/ValorantFont.otf");
-}
-@-webkit-keyframes rainbow {
-  0% {color: #9dbcff;}
-  50% {color: #b000b6;}
-  100% {color: #9dbcff;}
-}
-
-@-ms-keyframes rainbow {
-  0% {color: #9dbcff;}
-  50% {color: #b000b6;}
-  100% {color: #9dbcff;}
-}
-
-@-o-keyframes rainbow {
-  0% {color: #9dbcff;}
-  50% {color: #b000b6;}
-  100% {color: #9dbcff;}
-}
-
-@keyframes rainbow {
-  0% {color: #9dbcff;}
-  50% {color: #b000b6;}
-  100% {color: #9dbcff;}
-}
