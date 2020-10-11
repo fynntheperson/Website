@@ -2,6 +2,7 @@ body {
 	background-image: url("../assets/original.gif");
 	background-attachment: fixed;
 	background-size: cover;
+	font: "../assets/ValorantFont.otf"
 }
 
 /* Removes the dots — https://i.imgur.com/xLbk0cH.png */
@@ -37,8 +38,8 @@ img:hover {
 	text-align: center;
 }
 
-.rainbow-text {
-	background-image: linear-gradient(to left, violet, blue);   -webkit-background-clip: text;
-	color: transparent;
-  }
+@font-face {
+	font-family: "dosis";
+	src: url("../fonts/ValorantFont.otf");
+}
 
