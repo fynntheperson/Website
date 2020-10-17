@@ -51,4 +51,11 @@
 	 background: #aaa;
 	 color: #0414a7;
 }
+#center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
  
