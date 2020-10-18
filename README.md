@@ -1,2 +1,2 @@
 # Website
-threw some stuff together for a linktree
+:) idk but its a webiste :)

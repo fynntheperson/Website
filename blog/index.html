@@ -1,0 +1,94 @@
+<html>
+    <head>
+
+      <head>
+
+<title>cloud | blog</title>
+
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+      </head>
+		<meta charset="UTF-8">
+		<title>cloud</title>
+
+		<link rel="stylesheet" href="../css/styleBlog.css">
+		<link rel="icon" type="image/png" href="https://cdn.discordapp.com/attachments/743934885097373856/767393196685656084/Prof1le.png">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="/JS/boxify.js"></script>
+
+<script>
+
+$(".box").boxify();
+
+</script>
+
+    <script data-dapp-detection="">
+(function() {
+  let alreadyInsertedMetaTag = false
+
+  function __insertDappDetected() {
+    if (!alreadyInsertedMetaTag) {
+      const meta = document.createElement('meta')
+      meta.name = 'dapp-detected'
+      document.head.appendChild(meta)
+      alreadyInsertedMetaTag = true
+    }
+  }
+
+  if (window.hasOwnProperty('web3')) {
+    // Note a closure can't be used for this var because some sites like
+    // www.wnyc.org do a second script execution via eval for some reason.
+    window.__disableDappDetectionInsertion = true
+    // Likely oldWeb3 is undefined and it has a property only because
+    // we defined it. Some sites like wnyc.org are evaling all scripts
+    // that exist again, so this is protection against multiple calls.
+    if (window.web3 === undefined) {
+      return
+    }
+    __insertDappDetected()
+  } else {
+    var oldWeb3 = window.web3
+    Object.defineProperty(window, 'web3', {
+      configurable: true,
+      set: function (val) {
+        if (!window.__disableDappDetectionInsertion)
+          __insertDappDetected()
+        oldWeb3 = val
+      },
+      get: function () {
+        if (!window.__disableDappDetectionInsertion)
+          __insertDappDetected()
+        return oldWeb3
+      }
+    })
+  }
+})()</script>
+
+		<meta name="description" content="Linktree but custom">
+		<meta name="keywords" content="cloud, links">
+		<meta name="author" content="cloud">
+		<meta name="og:image" itemprop="image" content="https://cdn.discordapp.com/attachments/743934885097373856/767393196685656084/Prof1le.png">
+		<meta name="theme-color" content="#8ca0fb">
+
+		<meta property="og:site_name" content="cloud">
+		<meta property="og:url" content="http://clouds-projects.cc">
+		<meta property="og:description" content="Linktree but custom">
+		<meta property="og:type" content="website">
+	</head>
+<body class="box">
+    <div id="center">
+        </a>
+<a href="https://clouds-projects.cc/blog.Calendar.html" target="_blank">
+    <img src="https://img.icons8.com/fluent-systems-filled/100/000000/planner.png" alt="Posts by date">
+</a>
+<a href="https://clouds-projects.cc">
+  <img src="https://img.icons8.com/metro/100/000000/book.png" alt="Blog">
+</a>
+
+        <h1 id="heading" class="animate__bounceInUp">B L O G</h1>
+    </div>
+
+</body>
+</html>

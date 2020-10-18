@@ -1,0 +1,64 @@
+body {
+	
+	background-image: url("../assets/flowers.gif");
+	background-attachment: fixed;
+	background-size: cover;
+	font: "../fonts/LEMONMILK-Regular.otf"
+}
+body, html {
+	cursor: url("../assets/Cursor.png"), pointer;
+}
+
+/* Removes the dots — https://i.imgur.com/xLbk0cH.png */
+a {
+	text-decoration: none;
+}
+
+
+img {
+	transition-duration: 0.2s;
+}
+
+img:hover {
+	transform: translateY(-5px);
+}
+
+#heading {
+	font-family: "dosis";
+	font-size: 50px;
+	color: #325aa8;
+	margin: 0%;
+
+    text-shadow:
+    -1px -1px 0 #ffff,
+    1px -1px 0 #ffff,
+    -1px 1px 0 #ffff,
+    1px 1px 0 #ffff; 
+}
+
+#msg {
+
+font-family: "dosis";
+font-size: 25px;
+color: white;
+margin: 0%;
+
+}
+
+#right {
+  text-align: right;
+}
+
+#center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+@font-face {
+	font-family: "dosis";
+	src: url("../fonts/LEMONMILK-Regular.otf");
+}
+
