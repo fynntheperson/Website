@@ -4,6 +4,9 @@ body {
 	background-size: cover;
 	font: "../assets/ValorantFont.otf"
 }
+body, html {
+	cursor: url("../assets/Cursor.png"), pointer;
+}
 
 /* Removes the dots — https://i.imgur.com/xLbk0cH.png */
 a {
