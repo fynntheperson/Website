@@ -1,20 +1,61 @@
 body {
-	
-	background-image: url("../assets/stars.gif");
+	background-image: url("../assets/Backgrounds/stars.gif");
 	background-attachment: fixed;
 	background-size: cover;
 	font: "../assets/ValorantFont.otf"
 }
-body, html {
-	cursor: url("../assets/Cursor.png"), pointer;
-}
-
-/* Removes the dots — https://i.imgur.com/xLbk0cH.png */
 a {
 	text-decoration: none;
 }
 
-
+#loader {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	z-index: 1;
+	width: 120px;
+	height: 120px;
+	margin: -76px 0 0 -76px;
+	border: 16px solid #f3f3f3;
+	border-radius: 50%;
+	border-top: 16px solid #3498db;
+	-webkit-animation: spin 2s linear infinite;
+	animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+	0% { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+  }
+  
+  /* Add animation to "page content" */
+  .animate-bottom {
+	position: relative;
+	-webkit-animation-name: animatebottom;
+	-webkit-animation-duration: 1s;
+	animation-name: animatebottom;
+	animation-duration: 1s
+  }
+  
+  @-webkit-keyframes animatebottom {
+	from { bottom:-100px; opacity:0 } 
+	to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+	from{ bottom:-100px; opacity:0 } 
+	to{ bottom:0; opacity:1 }
+  }
+  
+  #myDiv {
+	display: none;
+	text-align: center;
+  }
 img {
 	transition-duration: 0.2s;
 }
@@ -42,6 +83,24 @@ font-family: "dosis";
 font-size: 25px;
 color: white;
 margin: 0%;
+
+}
+
+.topleft {
+
+	color: #2baeeb;
+	font-family: verdana;
+	font-size: 10px;
+  text-align: -webkit-left;
+
+}
+
+.topleft_color {
+
+color: #ffffff;
+font-family: verdana;
+font-size: 10px;
+text-align: -webkit-left;
 
 }
 
