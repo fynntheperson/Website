@@ -1,131 +1,158 @@
-<html>
-    <head>
-
-      <head>
-
-
-        <script  type="text/javascript">
-          function changeImg(imgNumber)	{
-            var myImages = ["assets/Backgrounds/cities.gif", "assets/Backgrounds/flowers.gif", "assets/Backgrounds/forest.gif", "assets/Backgrounds/stars.gif"]; 
-            var imgShown = document.body.style.backgroundImage;
-            var newImgNumber =Math.floor(Math.random()*myImages.length);
-            document.body.style.backgroundImage = 'url('+myImages[newImgNumber]+')';
-          }
-          window.onload=changeImg;
-        </script>
-
-<style type="text/css">
-  .bg {background-attachment:fixed; background-repeat: no-repeat;}
-</style>
-
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-        />
-      </head>
-		<meta charset="UTF-8">
-		<title>cloud</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/loader.scss">
-		<link rel="icon" type="image/png" href="https://cdn.discordapp.com/attachments/743934885097373856/767393196685656084/Prof1le.png">
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="/JS/boxify.js"></script>
-
-<script>
-
-$(".box").boxify();
-
-</script>
-
-    <script data-dapp-detection="">
-(function() {
-  let alreadyInsertedMetaTag = false
-
-  function __insertDappDetected() {
-    if (!alreadyInsertedMetaTag) {
-      const meta = document.createElement('meta')
-      meta.name = 'dapp-detected'
-      document.head.appendChild(meta)
-      alreadyInsertedMetaTag = true
-    }
-  }
-
-  if (window.hasOwnProperty('web3')) {
-    // Note a closure can't be used for this var because some sites like
-    // www.wnyc.org do a second script execution via eval for some reason.
-    window.__disableDappDetectionInsertion = true
-    // Likely oldWeb3 is undefined and it has a property only because
-    // we defined it. Some sites like wnyc.org are evaling all scripts
-    // that exist again, so this is protection against multiple calls.
-    if (window.web3 === undefined) {
-      return
-    }
-    __insertDappDetected()
-  } else {
-    var oldWeb3 = window.web3
-    Object.defineProperty(window, 'web3', {
-      configurable: true,
-      set: function (val) {
-        if (!window.__disableDappDetectionInsertion)
-          __insertDappDetected()
-        oldWeb3 = val
-      },
-      get: function () {
-        if (!window.__disableDappDetectionInsertion)
-          __insertDappDetected()
-        return oldWeb3
-      }
-    })
-  }
-})()</script>
-
-		<meta name="description" content="epic answag">
-		<meta name="keywords" content="cloud, links">
-		<meta name="author" content="cloud">
-		<meta name="og:image" itemprop="image" content="https://cdn.discordapp.com/attachments/743934885097373856/767393196685656084/Prof1le.png">
-		<meta name="theme-color" content="#8ca0fb">
-    <meta name="viewport" content="width=device-width, initial-scale=0.61">
-		<meta property="og:site_name" content="cloud">
-		<meta property="og:url" content="http://clouds-projects.cc">
-		<meta property="og:description" content="Linktree but custom">
-		<meta property="og:type" content="website">
-	</head>
-  <body onload="myFunction()" style="margin:0;">
-
-    <div id="loader"></div>
-    <div style="display:none;" id="myDiv">
-    <div id="center">
-        
-        <a href="https://discord.gg/WKfR54M">
-            <img src="assets/icos/discord-logo.png" alt="Discord">
-        </a>
-
-        <a href="https://twitch.tv/realcloudi3">
-            <img src="assets/icos/twitch.png" alt="Twitch">
-        </a>
-
-        <a href="https://www.youtube.com/channel/UCPlYHLCOSd2BoUbh8A1XO7w?view_as=subscriber">
-          <img src="assets/icos/youtube-play.png" alt="Youtube">
-
-<a href="http://73.152.91.26:69">
-<img src="assets/icos/octoprint.png">
-</a>
-        <h1 id="heading" class="animate__animated animate__bounce">cxloud#1111</h1>
-
-    </div>
-  </div>
-  <script>
-    var myVar;
-    
-    function myFunction() {
-      myVar = setTimeout(showPage, 3000);
-    }
-    
-    function showPage() {
-      document.getElementById("loader").style.display = "none";
-      document.getElementById("myDiv").style.display = "block";
-    }
-    </script>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="og:image" itemprop="image" content="https://steamcdn-a.akamaihd.net/steam/apps/1465860/header.jpg">
+      <meta name="theme-color" content="#0d0d0d">
+      <meta property="og:site_name" content="cxloud.cc">
+      <meta property="og:url" content="cxloud.cc">
+      <meta property="og:description" content="best portfolio ever">
+      <meta property="og:type" content="website">
+      <title>Home - cxloud.cc</title>
+      <!-- stylesheet -->
+      <link rel="stylesheet" href="style.css" />
+      <link rel="manifest" href="/site.webmanifest">
+      <!-- bootstrap cdns -->
+      <link
+         rel="stylesheet"
+         href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+         />
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+      <!-- google fonts -->
+      <link
+         href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i"
+         rel="stylesheet"
+         />
+      <!-- terminal effect -->
+      <script src="t.min.js"></script>
+      <!-- for on scroll animations -->
+      <link rel="stylesheet" href="animate.css" />
+      <script src="wow.min.js"></script>
+   </head>
+   <body>
+      <div class="wrapper">
+         <!--------------- navbar starts here --------------->
+         <nav>
+            <span id="brand">
+            <a href="" style="color: #0d0d0d;">home</a>
+            </span>
+            <span id="brand">
+<a href="https://discord.com/api/oauth2/authorize?client_id=794281725479223327&permissions=8&scope=bot" style="color: #080808;">Portfolio</a>
+            </span>
+         </nav>
+         <!--------------- navbar ends here --------------->
+         <!--------------- hero section starts here --------------->
+         <div class="hero">
+            <div class="header">
+               <h1 class="line anim-typewriter" style="color: #0044c4;">West Ayers</h1>
+            </div>
+         </div>
+         <br />
+         <div class="scroll-down"></div>
+         <!--------------- hero section ends here --------------->
+         <!--------------- projects section starts here --------------->
+         <br /><br /><br />
+         <h6>My Languages</h6>
+         <!--------------- projects section ends here --------------->
+         <!--------------- footer starts here --------------->
+         <div class="footer">
+            <div class="container">
+               <div class="withs">
+                  <p>
+                    Javascript, C++, and small bits of C#
+                  </p>
+                  
+               </div>
+               <div class="withs">
+                  <p>
+                     Check out My  <a href="https://github.com/cxloud" style="color: #0044c4;">GitHub</a>
+                    
+                  </p>
+                  <div class="col-lg-4" id="personal">
+                     <p class="wow fadeInUp">- West</p>
+                  </div>
+               </div>
+               <br /><br />
+               <div class="collab">
+                  <div class="row">
+                     <div class="col-lg-12">
+                        <p class="wow fadeInUp">
+                           programing is a headache
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <br />
+               <div class="hr">
+                  <div class="row"></div>
+               </div>
+               <br /><br />
+               <div class="info">
+                  <div class="row">
+                     <div class="col-lg-4"><br /><br /></div>
+                     <div class="col-lg-4 vibe" id="media">
+                        <p class="wow fadeInUp" data-wow-delay="0">cxloud#1111</p>
+                        <a href="https://paypal.me/RealCloudi3">Paypal</a>
+                     
+                        <br /><br />
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!--------------- footer ends here --------------->
+         <h5 style="text-align: center;">
+        <a href="https://twitch.tv/cxl0ud"><h5>Twitch</h5></a>
+         
+         <br /><br /><br /><br />
+      </div>
+      <!-- greensock cdn -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+      <script type="text/javascript">
+         // navigation starts here
+         
+         $("#toggle").click(function() {
+           $(this).toggleClass("on");
+           $("#resize").toggleClass("active");
+         });
+         
+         $("#resize ul li a").click(function() {
+           $(this).toggleClass("on");
+           $("#resize").toggleClass("active");
+         });
+         
+         $(".close-btn").click(function() {
+           $(this).toggleClass("on");
+           $("#resize").toggleClass("active");
+         });
+         
+         // navigation ends here
+         
+         // nav animation
+         
+         TweenMax.from("#brand", 1, {
+           delay: 0.4,
+           y: 10,
+           opacity: 0,
+           ease: Expo.easeInOut
+         });
+         
+         TweenMax.staggerFrom(
+           "#menu li a",
+           1,
+           {
+             delay: 0.4,
+             opacity: 0,
+             ease: Expo.easeInOut
+           },
+           0.1
+         );
+         
+         // nav animation ends
+         
+         new WOW().init();
+      </script>
+   </body>
 </html>
